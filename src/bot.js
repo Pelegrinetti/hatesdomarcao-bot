@@ -12,7 +12,7 @@ bot.on('ready', () => {
 
 bot.on('message', msg => {
   if (msg.content === '!marcao') {
-    msg.reply(hates[Math.round(Math.random() * (hates.length - 0))])
+    msg.reply(hates[Math.round(Math.random() * hates.length)])
   }
 })
 
